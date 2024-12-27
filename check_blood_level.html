@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provjeri level šećera u krvi</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+            margin: 20px;
+            background-color: whitesmoke;
+            color: #FF7777;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: content-box;
+            background-color: #FFE8C5;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+            background-color: #97BE5A;
+            color: whitesmoke;
+            border: none;
+            border-radius: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Provjeri te level vašeg šećera u krvi!</h1>
+        <input type="number" id="bloodSugar" name="bloodSugar" required>
+        <button onclick="checkBloodSugar()">Check Range</button>
+        <p id="result"></p>
+
+    </div>
+</body>
+<script>
+    function bloodSugarRange(bloodSugar) {
+        if (bloodSugar < 100) {
+            return "Normal";
+        } else if (bloodSugar >= 100 && bloodSugar <= 125) {
+            return "Pre-diabetic";
+        } else if (bloodSugar >= 126) {
+            return "Diabetic";
+        } else {
+            return "Netačan unos!";
+        }
+    }
+
+    function checkBloodSugar() {
+        const bloodSugarValue = parseFloat(document.getElementById("bloodSugar").value);
+        const result = bloodSugarRange(bloodSugarValue);
+        document.getElementById("result").innerText = `Level šećera u krvi je: ${result}`;
+    }
+</script>
+
+</html>
