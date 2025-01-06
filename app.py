@@ -98,7 +98,7 @@ async def add_data(data: AddDataRequest):
 
         return {"message": "Dodati su novi podaci i model je ponovo podučen!."}
     except Exception as e:
-        raise HTTPException(detail=f"Error pri predikciji: {str(e)}")
+        raise HTTPException(detail=f"Greška pri predikciji: {str(e)}")
     
 
 if __name__ == "__main__":
