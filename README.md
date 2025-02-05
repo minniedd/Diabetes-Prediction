@@ -8,24 +8,29 @@ Sama aplikacija neće vršiti dijagnozu, već se samo vršiti predikciju, da li 
 # Korištene tehnologije
 
 Korištene tehnologije koje su korištene u ovoj aplikaciji se sastoje od:
-HTML/CSS
-JavaScript
-Python
-FastAPI
+- HTML/CSS
+- JavaScript
+- Python
+- FastAPI
 
 # Struktura aplikacije
 
-Frontend dio aplikacije → index.html
-Backend dio aplikacije → app.py
-Dataset → diabetes_dataset.csv
+- Frontend dio aplikacije → index.html
+- Backend dio aplikacije → app.py
+- Dataset → diabetes_dataset.csv
 
 # Ključni parametri
 
-Broj trudnoća
-Glukoza
-Krvni pritisak
-Debljina kože
-Inzulin
+- Broj trudnoća
+- Glukoza
+- Krvni pritisak
+- Debljina kože
+- Inzulin
+- BMI
+- Genetska predispozicija
+- Godine
+
+Ovi parametri se koriste na osnovu medicinske literature, kao parametri koji se mogu koristiti pri predikciji same bolesti.
 
 # Algoritam
 
@@ -35,21 +40,15 @@ Rezultati su pokazali da je model ranog otkrivanja dijabetesa koji koristi algor
 
 # Python biblioteke
 
-os
-Pandas
-Numpy
-FastAPI
-Pydantic
-Sklearn 
+- os
+- Pandas
+- Numpy
+- FastAPI
+- Pydantic
+- Sklearn 
 
 # Reference 
 
-https://archive.ics.uci.edu/dataset/34/diabetes 
-https://www.sciencedirect.com/science/article/pii/S1877050920300557 
-
-BMI
-Genetska predispozicija
-Godine
-
-Ovi parametri se koriste na osnovu medicinske literature, kao parametri koji se mogu koristiti pri predikciji same bolesti.
+- https://archive.ics.uci.edu/dataset/34/diabetes 
+- https://www.sciencedirect.com/science/article/pii/S1877050920300557 
 
